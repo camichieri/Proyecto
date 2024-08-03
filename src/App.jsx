@@ -1,6 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
+import HomePage from './pages/HomePage.jsx';
 import ContactsPage from './pages/ContactsPage.jsx';
 import ChatsPage from './pages/ChatsPage.jsx';
 import ProfilePage from './pages/ProfilePage.jsx';
@@ -15,6 +16,7 @@ function App() {
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/chats/:contactId" element={<ChatsPage />} />
         <Route path="/profile/:contactId" element={<ProfilePage />} />
+        <Route path="*" element={<HomePage />} />
       </Routes>
     </div>
   );
