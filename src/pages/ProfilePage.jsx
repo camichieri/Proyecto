@@ -5,11 +5,11 @@ import './ProfilePage.css';
 const ProfilePage = () => {
   const { contactId } = useParams();
   const [user, setUser] = useState({
-    name: 'John Doe',
+    name: 'Copper',
     status: 'Hey there! I am using WhatsApp.',
-    phoneNumber: '+1 234 567 890',
-    email: 'john.doe@example.com',
-    profilePicture: 'https://via.placeholder.com/150'
+    phoneNumber: '+54 35655301',
+    email: 'pollito@guamail.com',
+    profilePicture: 'https://blog.dogfydiet.com/wp-content/uploads/2023/10/Caniche-toy-1.jpg'
   });
 
   return (
