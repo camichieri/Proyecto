@@ -5,10 +5,6 @@ import './BottomNavbar.css';
 const BottomNavbar = () => {
   return (
     <nav className="bottom-navbar">
-      <Link to="/novedades" className="navbar-item">
-        <i className="fa fa-star"></i>
-        <span>Novedades</span>
-      </Link>
       <Link to="/llamadas" className="navbar-item">
         <i className="fa fa-phone"></i>
         <span>Llamadas</span>

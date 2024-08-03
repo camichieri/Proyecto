@@ -1,0 +1,21 @@
+.llamadas-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e5ddd5;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .llamadas-page h1 {
+    color: #075e54;
+    margin-bottom: 20px;
+  }
+  
+  .llamadas-page p {
+    color: #555;
+    font-size: 18px;
+  }
+  

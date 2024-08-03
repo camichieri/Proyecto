@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage.jsx';
 import ContactsPage from './pages/ContactsPage.jsx';
 import ChatsPage from './pages/ChatsPage.jsx';
 import ProfilePage from './pages/ProfilePage.jsx';
+import LlamadasPage from './pages/LlamadasPage.jsx';
+import ConfiguracionPage from './pages/ConfiguracionPage.jsx';
 import './App.css';
 
 function App() {
@@ -12,17 +14,15 @@ function App() {
     <div className="app">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/chats" element={<ContactsPage />} />
         <Route path="/chats/:contactId" element={<ChatsPage />} />
         <Route path="/profile/:contactId" element={<ProfilePage />} />
-        <Route path="/novedades" element={<div>Novedades</div>} />
-        <Route path="/llamadas" element={<div>Llamadas</div>} />
-        <Route path="/configuracion" element={<div>Configuración</div>} />
+        <Route path="/llamadas" element={<LlamadasPage />} />
+        <Route path="/configuracion" element={<ConfiguracionPage />} />
       </Routes>
       <BottomNavbar />
     </div>
   );
 }
-
 
 export default App;
