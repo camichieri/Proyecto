@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
 import './ChatsPage.css';
 
 const ChatsPage = () => {
+  const { contactId } = useParams();
   const [messages, setMessages] = useState([
     { id: 1, sender: 'Alice', text: 'Hi Bob!' },
     { id: 2, sender: 'Bob', text: 'Hello Alice!' }
@@ -25,6 +27,9 @@ const ChatsPage = () => {
 
   return (
     <div className="chats-page">
+      <div className="chat-header">
+        <Link to={`/profile/${contactId}`} className="profile-link">View Profile</Link>
+      </div>
       <div id="chat-window" className="chat-window">
         {messages.map(message => (
           <div key={message.id} className={`message ${message.sender === 'You' ? 'you' : 'other'}`}>
