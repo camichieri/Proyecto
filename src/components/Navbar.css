@@ -1,6 +1,8 @@
 nav {
     background-color: #007bff;
     padding: 1em;
+    display: flex;
+    justify-content: space-around;
   }
   
   nav a {
@@ -13,3 +15,4 @@ nav {
     background-color: #0056b3;
     border-radius: 5px;
   }
+  

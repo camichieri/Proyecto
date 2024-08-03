@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
-import HomePage from './pages/HomePage.jsx';
+import ContactsPage from './pages/ContactsPage.jsx';
 import ChatsPage from './pages/ChatsPage.jsx';
 import ProfilePage from './pages/ProfilePage.jsx';
 import './App.css';
@@ -12,8 +12,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/chats" element={<ChatsPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/chats/:contactId" element={<ChatsPage />} />
+        <Route path="/profile/:contactId" element={<ProfilePage />} />
       </Routes>
     </div>
   );
