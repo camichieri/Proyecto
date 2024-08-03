@@ -6,7 +6,7 @@ export default defineConfig({
   root: '.',
   build: {
     rollupOptions: {
-      input: 'public/index.html'
+      input: './index.html'
     }
   }
 });
