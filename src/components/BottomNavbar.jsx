@@ -1,16 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './BottomNavbar.css';
 
-const Navbar = () => {
+const BottomNavbar = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/contacts">Contacts</Link>
-      <Link to="/chats">Chats</Link>
-      <Link to="/profile">Profile</Link>
+    <nav className="bottom-navbar">
+      <Link to="/novedades" className="navbar-item">
+        <i className="fa fa-star"></i>
+        <span>Novedades</span>
+      </Link>
+      <Link to="/llamadas" className="navbar-item">
+        <i className="fa fa-phone"></i>
+        <span>Llamadas</span>
+      </Link>
+      <Link to="/chats" className="navbar-item">
+        <i className="fa fa-comments"></i>
+        <span>Chats</span>
+      </Link>
+      <Link to="/configuracion" className="navbar-item">
+        <i className="fa fa-cog"></i>
+        <span>Configuración</span>
+      </Link>
     </nav>
   );
 };
 
-export default Navbar;
+export default BottomNavbar;
