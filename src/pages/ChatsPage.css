@@ -22,9 +22,10 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 10px; 
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 10px; /* Bordes redondeados */
     margin: 10px;
+    margin-bottom: 70px; /* Añade espacio para la barra de entrada de mensaje */
   }
   
   .message {
@@ -42,12 +43,12 @@
   
   .message.contacto {
     align-self: flex-start;
-    background-color: #dcf8c6;
+    background-color: #ffffff;
     border: 1px solid #e5ddd5;
   }
   
   .message-text {
-    font-size: 20px;
+    font-size: 14px;
   }
   
   .message-info {
@@ -68,8 +69,10 @@
     padding: 10px;
     background-color: #f1f1f1;
     border-top: 1px solid #ccc;
-    position: relative;
-    z-index: 1; 
+    position: fixed;
+    bottom: 60px; /* Posición por encima de la BottomNavbar */
+    width: 100%;
+    box-sizing: border-box;
   }
   
   .message-input {
@@ -84,7 +87,7 @@
   .send-button {
     padding: 10px 20px;
     border: none;
-    background-color: #5e0741; 
+    background-color: #127533; /* Cambio de color */
     color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
@@ -99,5 +102,10 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 0; 
+    height: 60px;
+    background-color: #075e54;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 0; /* Asegura que la barra de navegación esté debajo del contenedor de entrada */
   }
