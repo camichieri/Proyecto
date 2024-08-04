@@ -42,12 +42,12 @@
   
   .message.contacto {
     align-self: flex-start;
-    background-color: #ffffff;
+    background-color: #dcf8c6;
     border: 1px solid #e5ddd5;
   }
   
   .message-text {
-    font-size: 14px;
+    font-size: 20px;
   }
   
   .message-info {
@@ -68,6 +68,8 @@
     padding: 10px;
     background-color: #f1f1f1;
     border-top: 1px solid #ccc;
+    position: relative;
+    z-index: 1; 
   }
   
   .message-input {
@@ -91,4 +93,11 @@
   
   .send-button:hover {
     background-color: #0b7a75;
+  }
+  
+  .bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 0; 
   }
