@@ -26,53 +26,64 @@
     padding: 10px;
     border-radius: 10px;
     max-width: 60%;
+    position: relative;
   }
   
-  .message.you {
+  .message.yo {
     align-self: flex-end;
     background-color: #dcf8c6;
   }
   
-  .message.other {
+  .message.contacto {
     align-self: flex-start;
     background-color: #ffffff;
     border: 1px solid #e5ddd5;
   }
   
-  .message-sender {
-    font-weight: bold;
+  .message-text {
+    font-size: 14px;
   }
   
-  .message-input {
+  .message-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .message-time {
+    margin-right: 10px;
+  }
+  
+  .message-input-container {
     display: flex;
     padding: 10px;
     background-color: #f1f1f1;
     border-top: 1px solid #ccc;
   }
   
-  .message-input input {
+  .message-input {
     flex: 1;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 14px;
   }
   
-  .message-input button {
+  .send-button {
     padding: 10px 20px;
     border: none;
     background-color: #075e54;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
   }
   
-  .message-input button:hover {
+  .send-button:hover {
     background-color: #0b7a75;
   }
   
-  .profile-link {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
