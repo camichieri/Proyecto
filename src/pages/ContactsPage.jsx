@@ -7,8 +7,8 @@ const ContactsPage = () => {
     { id: 1, name: 'Copper', lastMessage: 'Hey doc,está?', time: '10:30 AM' },
     { id: 2, name: 'Rodolfo', lastMessage: 'Nos vemos entonces!', time: '9:45 AM' },
     { id: 3, name: 'Ramón', lastMessage: 'La humana me sacó turno para el corte?', time: 'Yesterday' },
-    { id: 4, name: 'Olaf', lastMessage: 'Si,está bien.', time: 'Monday' },
-    { id: 5, name: 'GusGus', lastMessage: 'Me voy a pasear, ya vuelvo.', time: 'Sunday' },
+    { id: 4, name: 'Olaf', lastMessage: 'Perfect Doc', time: 'Yesterday' },
+  
   ];
 
   return (

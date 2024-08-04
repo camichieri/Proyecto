@@ -1,26 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import DATA_MOCK from '../data';
 import './ChatsPage.css';
-
-const DATA_MOCK = [
-  { author: 'yo', text: 'Hola, ¿cómo estás?', estado: 'visto', day: 'ayer', hora: '10:30' },
-  { author: 'contacto', text: 'Bien, ¿y tú?', estado: 'visto', day: 'ayer', hora: '10:32' },
-  { author: 'yo', text: 'Todo bien, gracias.', estado: 'visto', day: 'hoy', hora: '14:15' },
-  { author: 'contacto', text: 'Me alegro.', estado: 'visto', day: 'hoy', hora: '14:16' },
-];
 
 const ChatsPage = () => {
   const { contactId } = useParams();
-  const [messages, setMessages] = useState(DATA_MOCK);
+  const [messages, setMessages] = useState(DATA_MOCK[contactId] || []);
   const [newMessage, setNewMessage] = useState('');
 
   const handleSendMessage = () => {
     if (newMessage.trim()) {
       const now = new Date();
       const hora = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-      const day = now.toLocaleDateString([], { day: '2-digit', month: 'short' });
-      setMessages([...messages, { author: 'yo', text: newMessage, estado: 'visto', day: 'hoy', hora }]);
+      const updatedMessages = [...messages, { author: 'yo', text: newMessage, estado: 'visto', day: 'hoy', hora }];
+      setMessages(updatedMessages);
       setNewMessage('');
+      
+      DATA_MOCK[contactId] = updatedMessages;
     }
   };
 
