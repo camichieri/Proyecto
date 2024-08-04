@@ -22,10 +22,10 @@
     overflow-y: auto;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
     margin: 10px;
-    margin-bottom: 70px; /* Añade espacio para la barra de entrada de mensaje */
+    margin-bottom: 70px; 
   }
   
   .message {
@@ -43,7 +43,7 @@
   
   .message.contacto {
     align-self: flex-start;
-    background-color: #ffffff;
+    background-color: #dcf8c6;
     border: 1px solid #e5ddd5;
   }
   
@@ -70,7 +70,7 @@
     background-color: #f1f1f1;
     border-top: 1px solid #ccc;
     position: fixed;
-    bottom: 60px; /* Posición por encima de la BottomNavbar */
+    bottom: 60px; 
     width: 100%;
     box-sizing: border-box;
   }
@@ -87,7 +87,7 @@
   .send-button {
     padding: 10px 20px;
     border: none;
-    background-color: #127533; /* Cambio de color */
+    background-color: #127533; 
     color: rgb(255, 255, 255);
     border-radius: 5px;
     cursor: pointer;
