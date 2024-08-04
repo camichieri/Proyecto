@@ -15,7 +15,8 @@ const ChatsPage = () => {
       const updatedMessages = [...messages, { author: 'yo', text: newMessage, estado: 'visto', day: 'hoy', hora }];
       setMessages(updatedMessages);
       setNewMessage('');
-      
+
+    
       DATA_MOCK[contactId] = updatedMessages;
     }
   };
