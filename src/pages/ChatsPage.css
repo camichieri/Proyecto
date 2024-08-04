@@ -107,5 +107,5 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    z-index: 0; /* Asegura que la barra de navegación esté debajo del contenedor de entrada */
+    z-index: 0; 
   }
