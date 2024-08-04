@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <Routes>
-      <Route path="/" element={<Navigate to="/chats" />} />
+        <Route path="/" element={<ChatsPage />} />
         <Route path="/chats" element={<ContactsPage />} />
         <Route path="/chats/:contactId" element={<ChatsPage />} />
         <Route path="/profile/:contactId" element={<ProfilePage />} />
